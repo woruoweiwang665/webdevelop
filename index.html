@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>慧居时代</title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="clear">
+				<li class="exct active1"><a href="index.html">首页</a></li>
+				<li class="exct"><a href="production.html">产品介绍</a></li>
+				<li class="exct"><a href="about.html">关于我们</a></li>
+				<li class="logo">慧居时代</li>
+				<li class="exct"><a href="event.html">企业事件</a></li>
+				<li class="exct"><a href="joinUs.html">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="content_index" style="padding-top: 60px;">
+			<div class="swiper-container">
+				<img src="img/main-swiper.jpg" alt="" class="banner" ondragstart="return false;"/>
+				<img src="img/main-font.png" alt="" class="index_titleAnimation" ondragstart="return false;"/>
+				
+			</div>
+			<div class="company">
+				<div class="wrap">
+				<a href="javascript:;" class="top" style="cursor:default"><p >客户至上</p></a>
+				<a href="javascript:;" class="left" style="cursor:default"><p class="bot">创新</p></a>
+				<a href="javascript:;" class="right" style="cursor:default"><p class="bot">专注</p></a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer">
+			<p class="company">慧居时代（北京）技术有限公司   版权所有</p>
+			<p class="copyRight">Copyright&copy; 2016-2017 All Right Reserved. 京ICP备17014304</p>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script type="text/javascript">
+		//轮播图初始化
+//		var	mySwiper = new Swiper('.swiper-container', {  
+//				        pagination : '.swiper-pagination',  
+//				        loop : true,  
+//				        autoplay : 3000,  
+//				        height: 570,
+//				        autoplayDisableOnInteraction: false, //触碰该滑块自动轮播就会停止
+//				       
+//				      });  
+	window.onscroll=function(){ 
+		  if($(window).scrollTop()<60){
+		 	console.log($(window).scrollTop());
+		 	$(".header").removeClass('fixed-dom');
+		 	$('.active1').removeClass('currentIndex');
+			
+		}else{
+			$(".header").addClass('fixed-dom');
+			$('.active1').addClass('currentIndex');
+			
+		}
+   };
+ 
+		</script>
+	</body>
+
+</html>

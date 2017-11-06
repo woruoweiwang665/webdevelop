@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<ul class="clear">
+			   	<li class="exct"><a href="index.html">首页</a></li>
+				<li class="exct"><a href="production.html">产品介绍</a></li>
+				<li class="exct active1"><a href="about.html">关于我们</a></li>
+				<li class="logo">慧居时代</li>
+				<li class="exct"><a href="event.html">企业事件</a></li>
+				<li class="exct"><a href="joinUs.html">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="content_about" style="padding-top: 60px;">
+		<div class="swiper-container">
+				<!--<img src="img/about-swiper.png" alt="" />-->
+				<!--<div class="wrapper"><span>慧居时代（北京）技术有限公司隶属于中国500强企业双良集团旗下的新三板上市公司慧居科技股份有限公司（股票代码：839023）。<br />慧居科技在全国范围内多个城市拥有供热特许经营权，集中供热面积达10亿平方米，公司拥有庞大的供热用户群体，基于多年来对供热用户的精心服务，用户对公司品牌有强烈的认同感。<br />
+在此基础上，慧居科技投资建立了慧居时代（北京）技术有限公司，致力于为慧居供热用户提供在线供热服务和其他基于互联网的优质生活服务。</span></div>
+			</div>-->
+			</div>
+			<div class="company">
+				<div class="wrap">
+				   <ul class="about_innerwrap">
+					   <li>
+					   		<img src="img/about-young.png"/>
+					   		<p>YOUNG</p>
+					   	</li>
+					   	<li>
+					   		<img src="img/about-optimistic.png"/>
+					   		<p>OPTIMISTIC</p>
+					   	</li>
+					   	<li>
+					   		<img src="img/about-preciceness.png"/>
+					   		<p>PRECISE</p>
+					   	</li>
+					   	<li>
+					   		<img src="img/about-efficiency.png"/>
+					   		<p>EFFECTIVE</p>
+					   	</li>
+				   </ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<p class="company">慧居时代（北京）技术有限公司   版权所有</p>
+			<p class="copyRight">Copyright&copy; 2016-2017 All Right Reserved. 京ICP备17014304</p>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script type="text/javascript">
+	window.onscroll=function(){ 
+		 if($(window).scrollTop()<60){
+		 	console.log($(window).scrollTop());
+		 	$(".header").removeClass('fixed-dom');
+		 	$('.active1').removeClass('currentIndex');
+			
+		}else{
+			$(".header").addClass('fixed-dom');
+			$('.active1').addClass('currentIndex');
+			
+		}
+   };
+
+	</script>
+	</body>
+</html>

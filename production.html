@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>产品介绍</title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<ul class="clear">
+				<li class="exct"><a href="index.html">首页</a></li>
+				<li class="exct active1"><a href="production.html">产品介绍</a></li>
+				<li class="exct"><a href="about.html">关于我们</a></li>
+				<li class="logo">慧居时代</li>
+				<li class="exct"><a href="event.html">企业事件</a></li>
+				<li class="exct"><a href="joinUs.html">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="content_production" style="padding-top: 60px;">
+			<div class="swiper-container">
+				
+			</div>
+			<div class="company">
+				<div class="wrap">
+				   <div class="wrap-inner">
+				   	<div class="download"><img src="img/production-download-left.png" alt="" /><span style="margin: 0 15px;">立即下载</span><img src="img/production-download-right.png" alt="" /></div>
+				   	<div class="wrap-inner-bottom">
+				   		<img src="img/production-andriod.png" alt="" class="platform fl"/>
+				   		<img src="img/production-ios.png" alt="" class="platform fr"/>
+				   	</div>
+				   </div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+				<p class="company">慧居时代（北京）技术有限公司   版权所有</p>
+			<p class="copyRight">Copyright&copy; 2016-2017 All Right Reserved. 京ICP备17014304</p>
+		<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script type="text/javascript">
+	window.onscroll=function(){ 
+		 if($(window).scrollTop()<60){
+		 	console.log($(window).scrollTop());
+		 	$(".header").removeClass('fixed-dom');
+		 	$('.active1').removeClass('currentIndex');
+			
+		}else{
+			$(".header").addClass('fixed-dom');
+			$('.active1').addClass('currentIndex');
+			
+		}
+   };
+ 
+
+	</script>
+	</body>
+</html>

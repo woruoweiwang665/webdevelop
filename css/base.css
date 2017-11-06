@@ -1,0 +1,47 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+li,
+ol,
+ul,
+dl,
+dt,
+dd {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.clear:after {
+	content: '';
+	display: block;
+	clear: both
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+	/* 为了兼容IE浏览器 */
+}
